@@ -1,0 +1,155 @@
+---
+title: "Realtime Chat Application"
+tagline: "Scalable real-time messaging platform with secure socket authentication"
+stack: ["Next.js", "Node.js", "Express", "MongoDB", "Socket.io", "JWT", "Tailwind"]
+github: "https://github.com/aswani-ka/Real-Time-Chat-App"
+live: "https://real-time-chat-app-six-peach.vercel.app/"
+featured: true
+image: "/projects/real-time-chat-page.png"
+
+---
+
+<div className="not-prose mt-6 mb-10 flex flex-wrap gap-4">
+
+  <a
+    href="https://real-time-chat-app-six-peach.vercel.app/"
+    target="_blank"
+    rel="noreferrer"
+    className="inline-flex items-center gap-2 rounded-full
+               bg-emerald-500 px-6 py-3 text-sm font-semibold text-white
+               shadow-lg shadow-emerald-500/20
+               no-underline hover:bg-emerald-400"
+  >
+    🌐 Live Demo
+  </a>
+
+  <a
+    href="https://github.com/aswani-ka/Real-Time-Chat-App"
+    target="_blank"
+    rel="noreferrer"
+    className="inline-flex items-center gap-2 rounded-full
+               border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white
+               backdrop-blur no-underline hover:bg-white/10"
+  >
+    💻 GitHub Repo
+  </a>
+
+</div>
+
+## Overview
+
+A full-stack realtime chat application that supports instant messaging, presence, typing indicators, and secure socket authentication — showcasing event-driven architecture and realtime system design.
+
+---
+
+## Problem
+
+REST APIs are not enough for realtime chat because users expect:
+
+- Instant message delivery
+- Live online/offline presence
+- Realtime typing indicators
+- Conversations that update without refresh
+
+---
+
+## Solution
+
+Built a websocket-powered chat system using **Socket.io** with a MERN backend.
+
+**Highlights**
+- Room-based messaging (isolated conversations)
+- JWT-based socket authentication
+- Persistent message storage in MongoDB
+- Presence + typing events broadcast in realtime
+
+---
+
+## Key Features
+
+### Messaging
+- 1:1 realtime messaging
+- Message timestamps
+- Stored history (MongoDB)
+
+### Presence & Typing
+- Online/offline indicators
+- Active user tracking
+- Typing indicator events
+
+### Security
+- JWT login
+- Socket middleware auth
+- Protected rooms
+
+---
+
+## Architecture
+
+**Frontend**
+- Next.js + Tailwind UI
+- State/context for active chat + messages
+
+**Backend**
+- Node.js + Express
+- REST endpoints for user + chat history
+
+**Realtime Layer**
+- Socket.io events + rooms
+- Broadcast to recipient + presence updates
+
+**Database**
+- MongoDB collections: Users, Conversations, Messages
+
+---
+
+## Messaging Workflow
+
+1. User logs in  
+2. Socket connects  
+3. JWT verified in socket middleware  
+4. User joins a conversation room  
+5. Message emitted  
+6. Saved in MongoDB  
+7. Broadcast to recipient instantly  
+
+---
+
+## Challenges & Solutions
+
+- **Socket Authentication:** Verified JWT in socket middleware to block unauthorized connections  
+- **Room Isolation:** Generated unique room IDs per user pair to avoid message leaks  
+- **Message Persistence:** Stored messages with timestamps for history loading  
+- **Presence Tracking:** Maintained active socket sessions to track online users  
+
+---
+
+## Results
+
+- Instant message delivery with event-driven flow
+- Scalable room-based architecture
+- Production-ready frontend + backend integration
+
+---
+
+## What I Learned
+
+- WebSocket lifecycle + Socket.io events
+- Auth in persistent connections
+- Data modeling for conversations/messages
+- Presence management patterns
+
+---
+
+## Links
+
+- [🌐 Live Demo](https://real-time-chat-app-six-peach.vercel.app/)
+- [💻 GitHub Repository](https://github.com/aswani-ka/Real-Time-Chat-App)
+
+
+---
+
+## Screenshots
+
+<Screenshot src="/projects/group-chat.png" alt="Group Chat UI" />
+<Screenshot src="/projects/private-chat.png" alt="Private Chat UI" />

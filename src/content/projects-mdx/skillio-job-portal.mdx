@@ -1,0 +1,193 @@
+---
+title: "Skillio – Full-Stack Job Portal Platform"
+tagline: "Role-based hiring platform connecting recruiters and job seekers"
+stack: ["Next.js", "MongoDB", "Node.js", "Express", "Tailwind", "JWT", "Cloudinary"]
+github: "https://github.com/aswani-ka/Skillio-Job-Portal"
+live: "https://skillio-job-portal.vercel.app/"
+featured: true
+image: "/projects/skillio-job-portal.png"
+
+---
+
+<div className="not-prose mt-6 mb-10 flex flex-wrap gap-4">
+
+  <a
+    href="https://skillio-job-portal.vercel.app/"
+    target="_blank"
+    rel="noreferrer"
+    className="inline-flex items-center gap-2 rounded-full
+               bg-emerald-500 px-6 py-3 text-sm font-semibold text-white
+               shadow-lg shadow-emerald-500/20
+               no-underline hover:bg-emerald-400"
+  >
+    🌐 Live Demo
+  </a>
+
+  <a
+    href="https://github.com/aswani-ka/Skillio-Job-Portal"
+    target="_blank"
+    rel="noreferrer"
+    className="inline-flex items-center gap-2 rounded-full
+               border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white
+               backdrop-blur no-underline hover:bg-white/10"
+  >
+    💻 GitHub Repo
+  </a>
+
+</div>
+
+
+## 🚀 Overview
+
+Skillio is a full-stack job portal platform designed to streamline the hiring workflow between recruiters and job seekers.
+
+The platform supports role-based dashboards, secure authentication, job postings, and application tracking — simulating a real production hiring system.
+
+---
+
+## ❗ Problem
+
+Traditional job platforms often lack:
+
+- Clear recruiter dashboards
+- Application tracking visibility
+- Role-based workflows
+- Secure authentication layers
+- Scalable job filtering/search
+
+Recruiters needed a clean way to manage postings and applicants, while job seekers required a structured application experience.
+
+---
+
+## 💡 Solution
+
+I built a role-based full-stack platform that enables:
+
+- Recruiters to post and manage jobs
+- Job seekers to search and apply
+- Secure login with protected routes
+- Application lifecycle tracking
+
+The system ensures separation of concerns between recruiter and job seeker functionalities.
+
+---
+
+## 🧩 Key Features
+
+### 👨‍💼 Recruiter
+- Post, edit, delete job listings
+- View applicants per job
+- Manage company profile
+- Dashboard analytics view
+- Secure password update
+
+### 👨‍🎓 Job Seeker
+- Browse & filter jobs
+- Apply with resume
+- Track application status
+- Profile management
+
+### 🔐 Authentication
+- JWT-based login system
+- Protected routes & APIs
+- Role authorization middleware
+
+---
+
+## 🏗️ Architecture & Tech Decisions
+
+### Frontend
+- **Next.js App Router** for routing & SSR
+- **Tailwind CSS** for scalable styling
+- Component-based UI architecture
+
+### Backend
+- **Node.js + Express** REST APIs
+- MVC folder structure
+- Middleware for auth & validation
+
+### Database
+- **MongoDB** with Mongoose schemas
+- Collections:
+  - Users
+  - Jobs
+  - Applications
+
+### Media Storage
+- **Cloudinary** for image uploads (company logos, assets)
+
+---
+
+## 🔄 Workflow Design
+
+1. Recruiter creates account  
+2. Posts job listing  
+3. Job seeker browses jobs  
+4. Applies to role  
+5. Recruiter views applicants  
+6. Application status updated  
+
+This simulates a real hiring lifecycle.
+
+---
+
+## ⚡ Challenges & Solutions
+
+### 1) Secure Route Protection
+**Challenge:** Prevent unauthorized dashboard access  
+**Solution:** Implemented JWT middleware + role guards
+
+---
+
+### 2) Application Data Linking
+**Challenge:** Mapping users → jobs → applications  
+**Solution:** Used relational references in MongoDB schemas
+
+---
+
+### 3) Image Upload Handling
+**Challenge:** Storing recruiter assets efficiently  
+**Solution:** Integrated Cloudinary storage with upload middleware
+
+---
+
+### 4) Filtering & Search
+**Challenge:** Dynamic job filtering  
+**Solution:** Built tag-based filtering system with query params
+
+---
+
+## 📈 Results & Impact
+
+- Built a complete hiring workflow system
+- Demonstrated full-stack CRUD operations
+- Implemented secure auth & protected APIs
+- Designed scalable DB schema relationships
+- Production-ready project structure
+
+---
+
+## 🧠 What I Learned
+
+- Role-based system design
+- JWT authentication flows
+- REST API structuring
+- Database schema modeling
+- File upload handling
+- Dashboard UX architecture
+
+---
+
+## Links
+
+- [🌐 Live Demo](https://skillio-job-portal.vercel.app/)
+- [💻 GitHub Repository](https://github.com/aswani-ka/Skillio-Job-Portal)
+
+
+---
+
+## Screenshots
+
+<Screenshot src="/projects/job-lists.png" alt="Jobs UI" />
+<Screenshot src="/projects/recruiter-dashboard.png" alt="Recruiter Dashboard UI" />
+<Screenshot src="/projects/company-profile.png" alt="Company Profile UI" />
