@@ -75,13 +75,13 @@ Role-based hiring platform with recruiter dashboards, job applications, and prot
 ## 📸 Screenshots
 
 ### Portfolio
-![Portfolio](projects/portfolio.png)
+![Portfolio](public/projects/portfolio.png)
 
 ### Realtime Chat App
-![Realtime Chat App](projects/real-time-chat-page.png)
+![Realtime Chat App](public/projects/real-time-chat-page.png)
 
 ### Job Portal
-![Job Portal](projects/skillio-job-portal.png)
+![Job Portal](public/projects/skillio-job-portal.png)
 
 ## 📬 Contact
 
