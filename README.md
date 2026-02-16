@@ -74,18 +74,14 @@ Role-based hiring platform with recruiter dashboards, job applications, and prot
 
 ## 📸 Screenshots
 
-(Add screenshots inside `/public/projects/` and reference here)
-
-
 ### Portfolio
-
-![Portfolio](/my-portfolio//public//projects/portfolio.png)
+![Portfolio](/my-portfolio/public/projects/portfolio.png)
 
 ### Realtime Chat App
-![Chat](/my-portfolio//public//projects/real-time-chat-page.png)
+![Realtime Chat App](/my-portfolio/public/projects/real-time-chat-page.png)
 
 ### Job Portal
-![Skillio](/my-portfolio/public/projects/skillio-job-portal.png)
+![Job Portal](/my-portfolio/public/projects/skillio-job-portal.png)
 
 ## 📬 Contact
 
@@ -97,6 +93,7 @@ If you’d like to discuss opportunities or collaborations:
 
 💻 GitHub: https://github.com/aswani-ka
 
+```
 ⚙️ Run Locally
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
@@ -116,3 +113,4 @@ Aswani K A
 Junior Full-Stack MERN Developer
 
 Focused on building scalable web applications with modern UI.
+```
