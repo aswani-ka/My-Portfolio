@@ -31,8 +31,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-4 border-t pt-6 text-sm dark:border-white/10 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-gray-600 dark:text-gray-300">
+        <div className="mt-10 flex flex-col-reverse gap-4 border-t pt-6 text-sm dark:border-white/10 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-gray-600 dark:text-gray-300 text-center mt-10 sm:mt-0 sm:text-left">
             © {new Date().getFullYear()} Aswani K A. All rights reserved.
           </p>
 
