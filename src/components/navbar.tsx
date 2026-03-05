@@ -51,7 +51,7 @@ export function Navbar() {
 
             {/* Resume Button */}
             <a
-              href="/resume.pdf"
+              href="/ASWANI_K_A_Resume.pdf"
               target="_blank"
               rel="noreferrer"
               className="rounded-full border px-4 py-1.5 transition hover:bg-gray-50 dark:border-white/15 dark:hover:bg-white/10"

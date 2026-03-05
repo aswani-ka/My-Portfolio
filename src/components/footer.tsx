@@ -23,7 +23,7 @@ export function Footer() {
               Contact Me
             </Link>
             <a
-              href="/resume.pdf"
+              href="/ASWANI_K_A_Resume.pdf"
               className="rounded-full border px-5 py-2 text-md hover:bg-white/10 dark:border-white/15"
             >
               Resume
