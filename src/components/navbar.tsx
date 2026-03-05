@@ -120,7 +120,7 @@ export function Navbar() {
               </Link>
 
               <a
-                href="/resume.pdf"
+                href="/ASWANI_K_A_Resume.pdf"
                 target="_blank"
                 rel="noreferrer"
                 onClick={close}
